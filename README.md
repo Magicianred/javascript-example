@@ -1,2 +1,5 @@
 # javascript-example
-Some example in javascript
+
+Some tests of javascript  
+
+[Some note and info about Javascript](Info.md)  
