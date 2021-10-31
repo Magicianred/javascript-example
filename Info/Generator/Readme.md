@@ -192,3 +192,25 @@ function* getRequest(endpoint) {
 	console.log(json);
 }
 ```
+
+## Usare un generatore con risultati infiniti
+
+```javascript
+function* randomNumber() {
+	while(true) {
+		yield Math.random();
+	}
+}
+```
+
+## Usare un generatore con risultati infiniti (ma con un massimo numero di volte)
+
+```javascript
+function* randomNumber() {
+	const max = 5;
+	const how = 0;
+	while(max > how++) {
+		yield Math.random();
+	}
+}
+```
